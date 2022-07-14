@@ -34,7 +34,7 @@ public class Main {
             //Logic, going through all the possible combinations of weapons
             if (input.equalsIgnoreCase("giant hammer") && computersChoice.equals("giant hammer")) {
                 System.out.println("Gladiator slammed you in the chest. You died.☠");
-                HelpMethods.printSeparator(20)
+                HelpMethods.printSeparator(20);
                 lives--;
                 System.out.println("You have "+lives+" lives left.");
                 System.out.println("Gladiator has "+lives+" lives left.");
