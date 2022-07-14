@@ -62,6 +62,7 @@ public class Main {
                 }
 
                 System.out.println("You have "+lives+" lives left.");
+                System.out.println("Gladiator has "+computerLives+" lives left.");
                 System.out.println("Gladiator have "+computerLives+" lives left.");
 
                 HelpMethods.anythingToContinue();
