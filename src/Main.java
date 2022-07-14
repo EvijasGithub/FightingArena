@@ -37,7 +37,6 @@ public class Main {
                 HelpMethods.printSeparator(20);
                 lives--;
                 System.out.println("You have "+lives+" lives left.");
-                System.out.println("Gladiator has "+lives+" lives left.");
                 System.out.println("Gladiator has "+computerLives+" lives left.");
                 HelpMethods.anythingToContinue();
                 HelpMethods.clearConsole();
