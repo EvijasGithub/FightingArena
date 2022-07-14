@@ -17,10 +17,14 @@ public class Main {
         boolean finished = false;
 
         //User can magically come back to life three times
-        int lives = 3;
-        int computerLives = 3;
+        Scanner scannerLives = new Scanner(System.in);
+        System.out.println("Enter how many lives do you want to have:");
+        int lives = scannerLives.nextInt();
+        System.out.println("Enter how many lives do you want gladiator to have:");
+        int computerLives = scannerLives.nextInt();
 
         while (!finished) {
+            HelpMethods.clearConsole();
             System.out.println("Choose your weapon:'sword','spear','giant hammer'.");
             String input = scanner.nextLine();
             System.out.println("Gladiators choice:");
