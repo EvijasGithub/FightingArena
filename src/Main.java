@@ -16,7 +16,7 @@ public class Main {
         HelpMethods.anythingToContinue();
         boolean finished = false;
 
-        //User can magically come back to life three times
+        
         Scanner scannerLives = new Scanner(System.in);
         System.out.println("Enter how many lives do you want to have:");
         int lives = scannerLives.nextInt();
@@ -34,11 +34,11 @@ public class Main {
             //Logic, going through all the possible combinations of weapons
             if (input.equalsIgnoreCase("giant hammer") && computersChoice.equals("giant hammer")) {
                 System.out.println("Gladiator slammed you in the chest. You died.☠");
-                HelpMethods.printSeparator(20);
-                //Every time user dies, one life comes off.
+                HelpMethods.printSeparator(20)
                 lives--;
                 System.out.println("You have "+lives+" lives left.");
-                System.out.println("Gladiator have "+computerLives+" lives left.");
+                System.out.println("Gladiator has "+lives+" lives left.");
+                System.out.println("Gladiator has "+computerLives+" lives left.");
                 HelpMethods.anythingToContinue();
                 HelpMethods.clearConsole();
             } else if (input.equalsIgnoreCase("giant hammer") && computersChoice.equals("spear")) {
@@ -46,15 +46,15 @@ public class Main {
                 HelpMethods.printSeparator(20);
                 lives--;
                 System.out.println("You have "+lives+" lives left.");
-                System.out.println("Gladiator have "+computerLives+" lives left.");
+                System.out.println("Gladiator has "+computerLives+" lives left.");
                 HelpMethods.anythingToContinue();
                 HelpMethods.clearConsole();
             } else if (input.equalsIgnoreCase("giant hammer") && computersChoice.equals("sword")) {
                 System.out.println("You broke his leg with your hammer. Gladiator passed out. You win!");
                 HelpMethods.printSeparator(20);
-                computerLives--;
                 System.out.println("You have "+lives+" lives left.");
-                System.out.println("Gladiator have "+computerLives+" lives left.");
+                computerLives--;
+                System.out.println("Gladiator has "+computerLives+" lives left.");
                 HelpMethods.anythingToContinue();
                 HelpMethods.clearConsole();
             }else if (input.equalsIgnoreCase("sword") && computersChoice.equals("sword")) {
@@ -62,15 +62,15 @@ public class Main {
                 HelpMethods.printSeparator(20);
                 lives--;
                 System.out.println("You have "+lives+" lives left.");
-                System.out.println("Gladiator have "+computerLives+" lives left.");
+                System.out.println("Gladiator has "+computerLives+" lives left.");
                 HelpMethods.anythingToContinue();
                 HelpMethods.clearConsole();
             } else if (input.equalsIgnoreCase("sword") && computersChoice.equals("spear")) {
                 System.out.println("You put your sword trough his stomach. You win!");
                 HelpMethods.printSeparator(20);
-                computerLives--;
                 System.out.println("You have "+lives+" lives left.");
-                System.out.println("Gladiator have "+computerLives+" lives left.");
+                computerLives--;
+                System.out.println("Gladiator has "+computerLives+" lives left.");
                 HelpMethods.anythingToContinue();
                 HelpMethods.clearConsole();
             } else if (input.equalsIgnoreCase("sword") && computersChoice.equals("giant hammer")) {
@@ -78,7 +78,7 @@ public class Main {
                 HelpMethods.printSeparator(20);
                 lives--;
                 System.out.println("You have "+lives+" lives left.");
-                System.out.println("Gladiator have "+computerLives+" lives left.");
+                System.out.println("Gladiator has "+computerLives+" lives left.");
                 HelpMethods.anythingToContinue();
                 HelpMethods.clearConsole();
             }else if (input.equalsIgnoreCase("spear") && computersChoice.equals("spear")) {
@@ -86,15 +86,15 @@ public class Main {
                 HelpMethods.printSeparator(20);
                 lives--;
                 System.out.println("You have "+lives+" lives left.");
-                System.out.println("Gladiator have "+computerLives+" lives left.");
+                System.out.println("Gladiator has "+computerLives+" lives left.");
                 HelpMethods.anythingToContinue();
                 HelpMethods.clearConsole();
             } else if (input.equalsIgnoreCase("spear") &&computersChoice.equals ("sword")) {
                 System.out.println("You hit him in the face with your spear.You win!");
                 HelpMethods.printSeparator(20);
-                computerLives--;
                 System.out.println("You have "+lives+" lives left.");
-                System.out.println("Gladiator have "+computerLives+" lives left.");
+                computerLives--;
+                System.out.println("Gladiator has "+computerLives+" lives left.");
                 HelpMethods.anythingToContinue();
                 HelpMethods.clearConsole();
             } else if (input.equalsIgnoreCase("spear") && computersChoice.equals("giant hammer")) {
@@ -102,7 +102,7 @@ public class Main {
                 HelpMethods.printSeparator(20);
                 lives--;
                 System.out.println("You have "+lives+" lives left.");
-                System.out.println("Gladiator have "+computerLives+" lives left.");
+                System.out.println("Gladiator has"+computerLives+" lives left.");
                 HelpMethods.anythingToContinue();
                 HelpMethods.clearConsole();
             }else{
@@ -110,12 +110,12 @@ public class Main {
                 HelpMethods.anythingToContinue();
                 HelpMethods.clearConsole();
             }
-            //Game ends when user runs out of lives
+            //Game ends when user or Gladiator runs out lives
             if (lives == 0) {
-                System.out.println("You are out of lives!");
+                System.out.println("You are out of lives. Gladiator wins.");
                 finished = true;
             } else if (computerLives == 0) {
-                System.out.println("Gladiator is out of lives!");
+                System.out.println("Gladiator is out of lives. You win!");
                 finished = true;
             }
         }
