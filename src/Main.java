@@ -38,7 +38,6 @@ public class Main {
                 //Every time user dies, one life comes off.
                 lives--;
                 System.out.println("You have "+lives+" lives left.");
-                System.out.println("Gladiator have "+lives+" lives left.");
                 System.out.println("Gladiator have "+computerLives+" lives left.");
                 HelpMethods.anythingToContinue();
                 HelpMethods.clearConsole();
@@ -53,8 +52,8 @@ public class Main {
             } else if (input.equalsIgnoreCase("giant hammer") && computersChoice.equals("sword")) {
                 System.out.println("You broke his leg with your hammer. Gladiator passed out. You win!");
                 HelpMethods.printSeparator(20);
-                System.out.println("You have "+lives+" lives left.");
                 computerLives--;
+                System.out.println("You have "+lives+" lives left.");
                 System.out.println("Gladiator have "+computerLives+" lives left.");
                 HelpMethods.anythingToContinue();
                 HelpMethods.clearConsole();
@@ -69,8 +68,8 @@ public class Main {
             } else if (input.equalsIgnoreCase("sword") && computersChoice.equals("spear")) {
                 System.out.println("You put your sword trough his stomach. You win!");
                 HelpMethods.printSeparator(20);
-                System.out.println("You have "+lives+" lives left.");
                 computerLives--;
+                System.out.println("You have "+lives+" lives left.");
                 System.out.println("Gladiator have "+computerLives+" lives left.");
                 HelpMethods.anythingToContinue();
                 HelpMethods.clearConsole();
@@ -93,8 +92,8 @@ public class Main {
             } else if (input.equalsIgnoreCase("spear") &&computersChoice.equals ("sword")) {
                 System.out.println("You hit him in the face with your spear.You win!");
                 HelpMethods.printSeparator(20);
-                System.out.println("You have "+lives+" lives left.");
                 computerLives--;
+                System.out.println("You have "+lives+" lives left.");
                 System.out.println("Gladiator have "+computerLives+" lives left.");
                 HelpMethods.anythingToContinue();
                 HelpMethods.clearConsole();
