@@ -16,14 +16,27 @@ public class Main {
         HelpMethods.anythingToContinue();
         boolean finished = false;
 
-        //User can magically come back to life three times
         Scanner scannerLives = new Scanner(System.in);
-        System.out.println("Enter how many lives do you want to have:");
-        int lives = scannerLives.nextInt();
-        System.out.println("Enter how many lives do you want gladiator to have:");
-        int computerLives = scannerLives.nextInt();
+        try {
+            System.out.println("Enter how many lives do you want to have:");
+            lives = scannerLives.nextInt();
+            System.out.println("Enter how many lives do you want gladiator to have:");
+            computerLives = scannerLives.nextInt();
+        }
+        catch (InputMismatchException ex){
+            System.out.println("Please, enter integers!");
+            return;
+        }
 
         while (!finished) {
+            
+            //(spear beats spear with 50% probability);
+            //(sword beats sword with 50% probability);
+            //(hammer beats hammer with 50% probability);
+            //(spear beats hammer with 67% probability and hammer beats spear with 33% probability);
+            //(hammer beats sword with 67% probability and sword beats hammer with 33% probability);
+            //(sword beats spear with 67% probability and spear beats sword with 33% probability);
+            
             HelpMethods.clearConsole();
             System.out.println("Choose your weapon:'sword','spear','giant hammer'.");
             String input = scanner.nextLine();
