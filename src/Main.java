@@ -11,8 +11,7 @@ public class Main {
 
         //Generating a random weapon for Gladiator
         Random random=new Random();
-        HelpMethods.clearConsole();
-        HelpMethods.printHeading("Welcome to Fighting Arena! Your opponent is Gladiator.");
+        System.out.println("Welcome to Fighting Arena! Your opponent is Gladiator.");
         boolean finished = false;
 
         //User can magically come back to life three times
